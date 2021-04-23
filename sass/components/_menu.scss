@@ -1,0 +1,32 @@
+.menu {
+  display: flex;
+  color: var(--title-text-color);
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.menu__link {
+  font-weight: 500;
+  letter-spacing: 2%;
+}
+
+.menu__link--active {
+  position: relative;
+  color: var(--text-accent);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 46px;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+    background-color: var(--text-accent);
+  }
+}

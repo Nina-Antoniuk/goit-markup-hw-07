@@ -1,0 +1,17 @@
+.button {
+  min-width: 200px;
+  padding: 10px 32px;
+  line-height: 1.87;
+  color: var(--light-text-color);
+  background-color: var(--text-accent);
+  transition: background-color var(--duration) var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+
+  &:focus {
+    outline: 2px solid var(--light-text-color);
+  }
+}

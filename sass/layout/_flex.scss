@@ -1,0 +1,14 @@
+.flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.flex__item {
+  margin-right: 30px;
+  width: calc((50% - 45px) / 2);
+
+  &:last-child {
+    flex-grow: 1;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,11 @@
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+
+  &__text-accent {
+    color: var(--text-accent);
+  }
+}

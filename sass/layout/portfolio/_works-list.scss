@@ -1,0 +1,70 @@
+.works-list {
+  &__img-wrapp {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__overlay-text {
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--light-text-color);
+  }
+
+  &__card-content {
+    padding: 20px 24px;
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+  }
+
+  &__card-title {
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 6%;
+
+    color: var(--title-text-color);
+  }
+
+  &__product-type {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+
+.works-list__card-link {
+  display: block;
+  transition: box-shadow var(--duration) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: currentColor;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.works-list__img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  background-color: rgba(33, 149, 243, 0.9);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform var(--duration) var(--cubic),
+    opacity var(--duration) var(--cubic);
+
+  .works-list__card-link:hover &,
+  .works-list__card-link:focus & {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

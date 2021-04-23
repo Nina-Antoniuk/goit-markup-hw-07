@@ -1,0 +1,39 @@
+.guidelines {
+  &__list {
+    --elements: 4;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: inherit;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
+}
+
+.guidelines__item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--secondary-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.guidelines__item:nth-child(1):before {
+  background-image: url(../../../images/icons/group.svg);
+}
+.guidelines__item:nth-child(2):before {
+  background-image: url(../../../images/icons/clock.svg);
+}
+
+.guidelines__item:nth-child(3):before {
+  background-image: url(../../../images/icons/diagram.svg);
+}
+
+.guidelines__item:nth-child(4):before {
+  background-image: url(../../../images/icons/astronaut.svg);
+}

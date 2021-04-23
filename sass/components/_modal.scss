@@ -1,0 +1,70 @@
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity var(--duration) var(--cubic);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
+  background-color: #fff;
+  opacity: 1;
+  transition: opacity var(--duration) var(--cubic),
+    transform var(--duration) var(--cubic);
+
+  .backdrop.is-hidden & {
+    position: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  &__btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--light-text-color);
+    cursor: pointer;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--title-text-color);
+  }
+}
+
+.modal__btn-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  fill: #000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal__btn:hover &,
+  .modal__btn:focus & {
+    fill: var(--text-accent);
+  }
+}

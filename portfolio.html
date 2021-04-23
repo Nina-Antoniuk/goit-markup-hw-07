@@ -11,43 +11,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
   <header class="header">
     <div class="conteiner header__conteiner">
       <nav class="page-nav">
-        <a class="logo link" href="./"><span class="accent">Web</span>Studio</a>
+        <a class="logo link" href="./"><span class="logo__text-accent">Web</span>Studio</a>
   
-        <ul class="nav-list page-nav__nav-list list">
-          <li class="nav-list__item">
-            <a class="nav-list__link nav-list__link--active link" href="./index.html">Студия</a>
+        <ul class="menu page-nav__menu list">
+          <li class="menu__item">
+            <a class="menu__link link" href="./index.html">Студия</a>
           </li>
   
-          <li class="nav-list__item">
-            <a class="nav-list__link link" href="./portfolio.html">Портфолио</a>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active link" href="./portfolio.html">Портфолио</a>
           </li>
   
-          <li class="nav-list__item">
-            <a class="nav-list__link link" href="">Контакты</a>
+          <li class="menu__item">
+            <a class="menu__link link" href="">Контакты</a>
           </li>
         </ul>
       </nav>
   
-      <ul class="page-nav__contacts-list list">
-        <li class="page-nav__contacts-item">
-          <a class="page-nav__contacts-link link" href="mailto:info@devstudio.com">
-            <svg class="page-nav__contacts-icon" width="16" height="12">
+      <ul class="header__contacts-list list">
+        <li class="header__contacts-item">
+          <a class="header__contacts-link link" href="mailto:info@devstudio.com">
+            <svg class="header__contacts-icon" width="16" height="12">
               <use href="./images/sprite.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com
           </a>
         </li>
   
-        <li class="page-nav__contacts-item">
-          <a class="page-nav__contacts-link link" href="tel:+380961111111">
-            <svg class="page-nav__contacts-icon" width="10" height="16">
+        <li class="header__contacts-item">
+          <a class="header__contacts-link link" href="tel:+380961111111">
+            <svg class="header__contacts-icon" width="10" height="16">
               <use href="./images/sprite.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11
@@ -65,30 +65,30 @@
         <!-- filter list -->
         <ul class="filter-list list">
           <li class="filter-list__item">
-            <button class="filter-list__btn" type="button">Все</button>
+            <button class="filter-list__btn btn" type="button">Все</button>
           </li>
 
           <li class="filter-list__item">
-            <button class="filter-list__btn" type="button">Веб-сайты</button>
+            <button class="filter-list__btn btn" type="button">Веб-сайты</button>
           </li>
 
           <li class="filter-list__item">
-            <button class="filter-list__btn" type="button">Приложения</button>
+            <button class="filter-list__btn btn" type="button">Приложения</button>
           </li>
 
           <li class="filter-list__item">
-            <button class="filter-list__btn" type="button">Дизайн</button>
+            <button class="filter-list__btn btn" type="button">Дизайн</button>
           </li>
 
           <li class="filter-list__item">
-            <button class="filter-list__btn" type="button">Маркетинг</button>
+            <button class="filter-list__btn btn" type="button">Маркетинг</button>
           </li>
         </ul>
         
         <!-- works examples list -->
         <ul class="works-list grid list">
           
-          <li class="works-list__card grid-item">
+          <li class="works-list__card grid__item">
             <a class="works-list__card-link link" href="">
               <div class="works-list__img-wrapp">
                 <img class="img" src="./images/portfolio/technokryak.jpg" width="370" height="295" alt="">
@@ -105,7 +105,7 @@
             </a>
           </li>
         
-          <li class="works-list__card grid-item">
+          <li class="works-list__card grid__item">
             <a class="works-list__card-link link" href="">
               <div class="works-list__img-wrapp">
                 <img class="img" src="./images/portfolio/poster.jpg" width="370" height="295" alt="">
@@ -122,7 +122,7 @@
             </a>
           </li>
         
-          <li class="works-list__card grid-item">
+          <li class="works-list__card grid__item">
             <a class="works-list__card-link link" href="">
               <div class="works-list__img-wrapp">
                 <img class="img" src="./images/portfolio/sea-food.jpg" width="370" height="295" alt="Ресторан Seafood">
@@ -139,7 +139,7 @@
             </a>
           </li>
         
-          <li class="works-list__card grid-item">
+          <li class="works-list__card grid__item">
             <a class="works-list__card-link link" href="">
               <div class="works-list__img-wrapp">
                 <img class="img" src="./images/portfolio/prime.jpg" width="370" height="295" alt="">
@@ -156,7 +156,7 @@
             </a>
           </li>
         
-          <li class="works-list__card grid-item">
+          <li class="works-list__card grid__item">
             <a class="works-list__card-link link" href="">
               <div class="works-list__img-wrapp">
                 <img class="img" src="./images/portfolio/boxes.jpg" width="370" height="295" alt="">
@@ -173,7 +173,7 @@
             </a>
           </li>
         
-          <li class="works-list__card grid-item">
+          <li class="works-list__card grid__item">
             <a class="works-list__card-link link" href="">
               <div class="works-list__img-wrapp">
                 <img class="img" src="./images/portfolio/inspiration.jpg" width="370" height="295" alt="">
@@ -190,7 +190,7 @@
             </a>
           </li>
         
-          <li class="works-list__card grid-item">
+          <li class="works-list__card grid__item">
             <a class="works-list__card-link link" href="">
               <div class="works-list__img-wrapp">
                 <img class="img" src="./images/portfolio/limited-edition.jpg" width="370" height="295" alt="">
@@ -207,7 +207,7 @@
             </a>
           </li>
         
-          <li class="works-list__card grid-item">
+          <li class="works-list__card grid__item">
             <a class="works-list__card-link link" href="">
               <div class="works-list__img-wrapp">
                 <img class="img" src="./images/portfolio/lab.jpg" width="370" height="295" alt="">
@@ -224,7 +224,7 @@
             </a>
           </li>
         
-          <li class="works-list__card grid-item">
+          <li class="works-list__card grid__item">
             <a class="works-list__card-link link" href="">
               <div class="works-list__img-wrapp">
                 <img class="img" src="./images/portfolio/growing-business.jpg" width="370" height="295" alt="">
@@ -248,9 +248,8 @@
 
   <footer class="footer">
     <div class="conteiner flex">
-      <div class="flex-item">
-        <a class="logo link" href="./"><span class="accent">Web</span>Studio</a>
-  
+      <div class="flex__item">
+        <a class="logo link" href="./"><span class="logo__text-accent">Web</span>Studio</a>
         <ul class="footer__contacts-list list">
           <li class="footer__contacts-item">
             <address>г. Киев, пр-т Леси Украинки, 26</address>
@@ -262,12 +261,12 @@
         </ul>
       </div>
   
-      <div class="flex-item">
+      <div class="flex__item">
         <p><strong class="footer__title">присоединяйтесь</strong></p>
         <ul class="socials-list list">
           <li class="socials-list__item">
-            <a href="" class="socials-list__link socials-list__link--light-bg" aria-label="instagram link" target="_blank"
-              rel="noopener noreferrer">
+            <a href="" class="socials-list__link socials-list__link--light-bg" aria-label="ссылка на instagram"
+              target="_blank" rel="noopener noreferrer">
               <svg class="socials-list__icon socials-list__icon--light">
                 <use href="./images/sprite.svg#icon-instagram"></use>
               </svg>
@@ -275,8 +274,8 @@
           </li>
   
           <li class="socials-list__item list">
-            <a href="" class="socials-list__link socials-list__link--light-bg" aria-label="twitter link" target="_blank"
-              rel="noopener noreferrer">
+            <a href="" class="socials-list__link socials-list__link--light-bg" aria-label="ссылка на twitter"
+              target="_blank" rel="noopener noreferrer">
               <svg class="socials-list__icon socials-list__icon--light">
                 <use href="./images/sprite.svg#icon-twitter"></use>
               </svg>
@@ -284,8 +283,8 @@
           </li>
   
           <li class="socials-list__item list">
-            <a href="" class="socials-list__link socials-list__link--light-bg" aria-label="facebook link" target="_blank"
-              rel="noopener noreferrer">
+            <a href="" class="socials-list__link socials-list__link--light-bg" aria-label="ссылка на facebook"
+              target="_blank" rel="noopener noreferrer">
               <svg class="socials-list__icon socials-list__icon--light">
                 <use href="./images/sprite.svg#icon-facebook"></use>
               </svg>
@@ -293,8 +292,8 @@
           </li>
   
           <li class="socials-list__item list">
-            <a href="" class="socials-list__link socials-list__link--light-bg" aria-label="linkedin link" target="_blank"
-              rel="noopener noreferrer">
+            <a href="" class="socials-list__link socials-list__link--light-bg" aria-label="ссылка на linkedin"
+              target="_blank" rel="noopener noreferrer">
               <svg class="socials-list__icon socials-list__icon--light">
                 <use href="./images/sprite.svg#icon-linkedin"></use>
               </svg>
@@ -303,11 +302,11 @@
         </ul>
       </div>
   
-      <div class="flex-item">
+      <div class="flex__item">
         <p><strong class="footer__title">Подпишитесь на рассылку</strong></p>
         <form class="subscription-form">
           <input class="subscription-form__input" type="email" name="email" placeholder="E-mail">
-          <button class="subscription-form__button" type="submit">Подписаться
+          <button class="button subscription-form__button btn" type="submit">Подписаться
             <svg class="subscription-form__icon">
               <use href="./images/sprite.svg#icon-telegram"></use>
             </svg>
