@@ -4,7 +4,7 @@
   margin-top: calc(-1 * var(--gap));
   margin-left: calc(-1 * var(--gap));
 
-  &__item {
+  &-item {
     flex-basis: calc((100% - var(--elements) * var(--gap)) / var(--elements));
     margin-top: var(--gap);
     margin-left: var(--gap);

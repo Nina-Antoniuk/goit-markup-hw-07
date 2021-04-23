@@ -438,7 +438,7 @@ address {
   margin-left: calc(-1 * var(--gap));
 }
 
-.grid__item {
+.grid-item {
   flex-basis: calc((100% - var(--elements) * var(--gap)) / var(--elements));
   margin-top: var(--gap);
   margin-left: var(--gap);
@@ -449,12 +449,12 @@ address {
   align-items: baseline;
 }
 
-.flex__item {
+.flex-item {
   margin-right: 30px;
   width: calc((50% - 45px) / 2);
 }
 
-.flex__item:last-child {
+.flex-item:last-child {
   flex-grow: 1;
   margin-right: 0;
 }
@@ -533,7 +533,7 @@ address {
   color: var(--title-text-color);
 }
 
-.guidelines__item::before {
+.guidelines__item:before {
   content: '';
   display: block;
   height: 120px;
@@ -611,6 +611,10 @@ address {
 
 .team-members__position {
   margin-bottom: 16px;
+}
+
+.customers__list-item {
+  --elements: 6;
 }
 
 .customers__link {
