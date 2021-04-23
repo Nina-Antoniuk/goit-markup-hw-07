@@ -1,29 +1,22 @@
 @import './utils/variables';
 @import './base/common';
-
 @import './components/logo';
 @import './components/navigation';
 @import './components/menu';
 @import './components/button';
-
 @import './components/socials';
-
-@import './components/subscription-form.scss';
+@import './components/subscription-form';
 @import './components/modal';
 @import './components/modal-form';
-
 @import './layout/section';
 @import './layout/grid';
 @import './layout/flex';
 @import './layout/page-header';
-
 @import './layout/studio/hero';
 @import './layout/studio/guidelines';
 @import './layout/studio/services';
 @import './layout/studio/team';
 @import './layout/studio/customers';
-
 @import './layout/portfolio/filter';
 @import './layout/portfolio/works-list';
-
 @import './layout/page-footer';

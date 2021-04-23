@@ -55,21 +55,6 @@ p {
   list-style-type: none;
 }
 
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
-
-address {
-  font-style: normal;
-}
-
 .img {
   display: block;
   max-width: 100%;
@@ -90,6 +75,21 @@ address {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+address {
+  font-style: normal;
 }
 
 .logo {
@@ -153,13 +153,12 @@ address {
   transition: background-color var(--duration) var(--cubic);
 }
 
-.button:hover {
+.button:hover, .button:focus {
   background-color: #188ce8;
 }
 
 .button:focus {
   outline: 2px solid var(--light-text-color);
-  background-color: #188ce8;
 }
 
 .socials-list {
@@ -234,7 +233,6 @@ address {
   outline: 2px solid var(--light-text-color);
 }
 
-/* backdrop */
 .backdrop {
   position: fixed;
   top: 0px;
@@ -252,7 +250,6 @@ address {
   visibility: hidden;
 }
 
-/* modal */
 .modal {
   position: absolute;
   top: 50%;
@@ -284,6 +281,14 @@ address {
   cursor: pointer;
 }
 
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
 .modal__btn-icon {
   display: block;
   width: 18px;
@@ -295,14 +300,6 @@ address {
 .modal__btn:hover .modal__btn-icon,
 .modal__btn:focus .modal__btn-icon {
   fill: var(--text-accent);
-}
-
-.modal__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  color: var(--title-text-color);
 }
 
 .form__label {
