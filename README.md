@@ -1,10 +1,11 @@
-# Homework 7
+# Домашне завдання 7
+## Тема: методологія BEM, препроцесор SASS
 Завдання виконано відповідно до ТЗ - https://github.com/goitacademy/html-css-homework/tree/master/7-bem-sass
 
-Технології:
+## Технології:
  - HTML;
- - SASS;
  - BEM;
-
-Додатково:
- - prittier;
+ - SASS;
+ - flexbox;
+ - svg;
+ 
